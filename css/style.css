@@ -1,0 +1,152 @@
+/* Css Variables */
+:root{
+    --primaray-color:#FA804C;
+    --secondary-color:#363958;
+    --lightgrau-colr:#f1f1f1;
+}
+
+
+/* Golobel Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*==============================================
+                 Navber Section 
+================================================*/
+.navbar-brand{
+    width: 250px;
+    height: 50px;
+    color: var(--secondary-color);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    font-weight: 600;
+    margin: 0px 20px;
+    transition: .5s ease-in-out;
+    text-align: center;
+    
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--primaray-color);
+    
+}
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+.navbar-dark .navbar-toggler {
+    color:var(--secondary-color);
+    border: 2px solid black;
+}
+.navbar-toggler {
+    background: rgba(0,0,0,.7);
+    color: white;
+}
+
+/*===============================================
+                 Banner Section
+================================================== */
+.banner__title {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primaray-color);
+}
+.banner__title--change{
+    color: var(--secondary-color);
+}
+
+/*===============================================
+                 Main Section
+================================================== */
+.main__title {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 200px;
+}
+.card__img {
+    background: var(--lightgrau-colr);
+    border-radius: 10px;
+}
+.card__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.card__price {
+    font-style: 30px;
+    font-weight: 400;
+    color: var(--primaray-color);
+}
+
+/*=================================================
+                 Footer Section 
+====================================================*/
+.footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.detalce__img {
+    width: 80px;
+}
+.detalce__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.detalce__dec {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/*===============================================
+                 Responsive Devise 
+==================================================*/
+
+@media (max-width:576px) {
+    .navbar-brand {
+        width: 200px;
+    }
+    .banner__title {
+        font-size: 34px;
+        font-weight: bold;
+        color: var(--primaray-color);
+        text-align: center;
+    }
+    .banner__title--change {
+        color: var(--secondary-color);
+    }
+    .banner__dec{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .detalce__title {
+        font-size: 19px;
+    }
+    .detalce__dec {
+        text-align:left;
+    }
+    .detalce__img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
